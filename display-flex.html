@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container{
+            border: 1px solid red;
+        }
+
+        div.item{
+            border: 1px solid blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display block</h1>
+    <div class="container"> <!-- Repare que cada div ocupa toda a região da tela
+        dentro do espaço do elemento pai = comportamento display block-->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h1>Display flex</h1>
+    <div class="container" style="display: flex;"> 
+    <!--Modifica o comportamento padrao dos filhos, tamanho se adapta ao conteudo-->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 teste</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>

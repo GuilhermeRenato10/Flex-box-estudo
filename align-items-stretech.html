@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container{
+            border: 1px solid red;
+        }
+
+        div.item{
+            border: 1px solid blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Align-Items: stretch (padrão) - column wrap</h3>
+    <div class="container"
+     style="
+     min-height: 120px;
+     max-height: 120px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: flex-start;
+     align-items: stretch;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+
+    <h3>Align-Items: stretch (padrão) - row wrap</h3>
+    <div class="container"
+     style="
+     min-height: 120px;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-start;
+     align-items: stretch;
+     "> 
+        <div class="item">Item <br>1 <br> <br> - <br> Multilinha</div>
+        <div class="item">Item 2 - Multilinha</div>
+        <div class="item">Item 3 - Multilinha</div>
+        <div class="item">Item 4 - Multilinha</div>
+        <div class="item">Item 5 - Multilinha</div>
+        <div class="item">Item 6 - Multilinha</div>
+        <div class="item">Item 7 - Multilinha</div>
+    </div>
+
+    <h3>Justify-content: space-evenly - column wrap</h3>
+    <div class="container"
+     style="
+     min-height: 140px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-evenly;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h3>Justify-content: space-around - column wrap</h3>
+    <div class="container"
+     style="
+     min-height: 140px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-around;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h3>Justify-content: space-between - column wrap</h3>
+    <div class="container"
+     style="
+     min-height: 140px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-between;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: space-evenly - row wrap</h3>
+    <div class="container"
+     style="
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: space-around - row wrap</h3>
+    <div class="container"
+     style="
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: space-between - row wrap</h3>
+    <div class="container"
+     style="
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: center - column wrap</h3>
+    <div class="container"
+     style="
+     max-height: 100px;
+     min-height: 100px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     "> 
+        <div class="item">Item 1-Aumentando o conteúdo</div>
+        <div class="item" style="padding: 30px 0px 30px 0px;">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: flex-end - column wrap</h3>
+    <div class="container"
+     style="
+     max-height: 100px;
+     min-height: 100px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: flex-end;
+     "> 
+        <div class="item">Item 1-Aumentando o conteúdo</div>
+        <div class="item" style="padding: 30px 0px 30px 0px;">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: flex-start - column wrap</h3>
+    <div class="container"
+     style="
+     max-height: 100px;
+     min-height: 100px;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: flex-start;
+     "> 
+        <div class="item">Item 1-Aumentando o conteúdo</div>
+        <div class="item" style="padding: 30px 0px 30px 0px;">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: center- row wrap</h3>
+    <div class="container"
+     style="
+     max-height: 80px;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     "> 
+        <div class="item">Item 1-Aumentando o conteúdo</div>
+        <div class="item" style="padding: 0px 30px 0px 30px;">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: flex-end - row wrap</h3>
+    <div class="container"
+     style="
+     max-height: 80px;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-end  ;
+     "> 
+        <div class="item">Item 1-Aumentando o conteúdo</div>
+        <div class="item" style="padding: 0px 30px 0px 30px;">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Justify-content: flex-start(padrão)- row wrap</h3>
+    <div class="container"
+     style="
+     max-height: 80px;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-start;
+     "> 
+        <div class="item">Item 1-Aumentando o conteúdo</div>
+        <div class="item" style="padding: 0px 30px 0px 30px;">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Flex-flow: row - wrap</h3>
+    <div class="container"
+     style="
+     max-width:90px;
+     display: flex;
+     flex-flow: row wrap;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Flex-flow: row - nowrap (padrão)</h3>
+    <div class="container"
+     style="
+     max-height: 190px;
+     display: flex;
+     flex-flow: row wrap;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <!-- flex-flow: shorthand: posso usar em somente um comando, propriedades 
+     de flex-direction e flex-wrap
+     Exemplos: flex-flow: row wrap;
+     flex-flow: column wrap-reverse; -->
+
+    <h3>Flex-wrap: wrap - column</h3>
+    <div class="container"
+     style="
+     max-height: 190px;
+     display: flex;
+     flex-direction: column; 
+     flex-wrap: wrap;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div> 
+        <!--O wrap no fluxo column quebra em duas colunas, mantendo dentro da altura do container-->
+    </div>
+
+    <h3>Flex-wrap: nowrap (padrão) - column</h3>
+    <div class="container"
+     style="
+     max-height: 190px;
+     display: flex;
+     flex-direction: column; 
+     flex-wrap: nowrap;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div> 
+        <!--Overflow, estoura o tamanho do main size, que no caso de column é a altura-->
+    </div>
+
+    <h3>Flex-wrap: wrap-reverse - row</h3>
+    <div class="container"
+     style="
+     max-width: 300px;
+     display: flex;
+     flex-direction: row; 
+     flex-wrap: wrap-reverse;
+     "> 
+     <!--O wrap-reverse muda a sequência das linhase não do conteúdo, respeitando o start e o end do main axis -->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div>
+        <div class="item">Item 14</div>
+        <div class="item">Item 15</div>
+    </div>  
+
+    <h3>Flex-wrap: wrap - row</h3>
+    <div class="container"
+     style="
+     max-width: 300px;
+     display: flex;
+     flex-direction: row; 
+     flex-wrap: wrap;
+     "> 
+     <!--O wrap quebra o conteúdo em duas linhas para encapsular no main size-->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>  
+
+    <h3>Flex-wrap: nowrap (padrão) - row</h3>
+    <div class="container"
+     style="
+     max-width: 200px;
+     display: flex;
+     flex-direction: row; 
+     flex-wrap: nowrap;
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <!--Overflow, estoura o tamanho do main size, que no caso de row é a largura-->
+    </div>
+
+    <!-- Prestar atenção no main axis -->
+
+    <h3>Flex-direction: column-reverse</h3>
+    <div class="container"
+     style="
+     display: flex;
+     flex-direction: column-reverse; 
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Flex-direction: column</h3>
+    <div class="container"
+     style="
+     display: flex;
+     flex-direction: column; 
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Flex-direction: row-reverse</h3>
+    <div class="container"
+     style="
+     display: flex;
+     flex-direction: row-reverse; 
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Flex-direction: row (padrão)</h3>
+    <div class="container"
+     style="
+     display: flex;
+     flex-direction: row; 
+     "> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>Display block</h3>
+    <div class="container"> <!-- Repare que cada div ocupa toda a região da tela
+        dentro do espaço do elemento pai = comportamento display block-->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h3>Display flex</h3>
+    <div class="container" style="display: flex;"> 
+    <!--Modifica o comportamento padrao dos filhos, tamanho se adapta ao conteudo-->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 teste</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>
